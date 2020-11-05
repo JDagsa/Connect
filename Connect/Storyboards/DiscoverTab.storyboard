@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="50f-r6-aoJ">
+            <objects>
+                <viewController id="GnK-DR-jfP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQx-ZG-oA6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oAO-hC-EHb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Discover" id="Mwa-jd-j3V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-Ad-aIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3633" y="60"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c4k-nO-pai">
+            <objects>
+                <navigationController storyboardIdentifier="DiscoverTab" automaticallyAdjustsScrollViewInsets="NO" id="1SV-IG-FU5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover-selected" id="K5V-v4-qHl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Iht-ME-llh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GnK-DR-jfP" kind="relationship" relationship="rootViewController" id="XfT-w9-TaM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7PY-wY-9cG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2820" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Discover" width="23" height="23"/>
+        <image name="Discover-selected" width="23" height="23"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
